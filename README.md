@@ -1,5 +1,5 @@
 # MySieuThi_Mobile with www.parse.com
-dự án của tôi
+Marketlink - android - parse.com 
 This app coding with parse.com
 You can log in by account
 -User : 0999999999
