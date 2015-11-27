@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".TaoTaiKhoanMainActivity" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#aa0000"
+            android:textSize="20sp"
+            android:text="TẠO TÀI KHOẢN" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Chọn loại tài khoản muốn tạo :" />
+
+
+        <RadioGroup
+            android:id="@+id/loaiTaiKhoan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Tài khoản mua" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tài khoản bán" />
+        </RadioGroup>
+
+
+        <EditText
+            android:layout_marginTop="50dp"
+            android:id="@+id/mataikhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập SĐT"
+            android:singleLine="true"
+            android:ems="10"
+            android:text="">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/matkhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mật khẩu"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/nhaplaimatkhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập lại mật khẩu"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/tentaikhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Tên người dùng / Tên công ty"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/diachi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Địa chỉ"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điều khoản" />
+
+        <ScrollView
+            android:id="@+id/ScrollView01"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="100dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 1. Người dùng là người việt đang số tại Việt Nam \n 2. Người Mua tự tìm kiếm, tham khảo thông tin sản phẩm trên trang Web và lựa chọn sản phẩm \n 3. Người Mua tự liên lạc với Người Bán để thỏa thuận việc mua bán
+        \n 4. Người Mua và Người Bán tự thỏa thuận việc giao nhận hàng và thanh toán với nhau \n 4. Quy trình bảo hành/bảo trì sản phẩm: Người Bán và Người Mua tự thỏa thuận với nhau việc bảo hành và bảo trì sản phẩm. \n 5. Mọi tranh chấp, khiếu nại liên quan đến các giao dịch trên sàn giao dịch thương mại điện tử giữa Người mua và Người bán sẽ được hai bên phải tự giải quyết với nhau."/>
+
+        </ScrollView>
+
+        <CheckBox
+            android:layout_gravity="center"
+            android:id="@+id/dieukhoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tôi đồng ý với các điều khoản trên" />
+
+        <Button
+            android:id="@+id/dangki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Đăng kí" />
+
+
+
+    </LinearLayout>
+</ScrollView>
